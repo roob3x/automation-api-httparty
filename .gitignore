@@ -1,0 +1,2 @@
+report/allure-results/*.json
+.DS_Store
