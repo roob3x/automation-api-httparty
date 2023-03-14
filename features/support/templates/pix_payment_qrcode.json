@@ -1,0 +1,23 @@
+{
+    "recipient": {
+        "bank": {
+            "name": "{BANKNAME}",
+            "ispb": "{ISPB}"
+        },
+        "document": "{DOCUMENT}",
+        "name": "{NAME}",
+        "key": "{KEY}",
+        "key_type": "{KEY_TYPE}"
+    },
+    "sender": {
+        "bank": {
+            "name": "{SENDER_BANK_NAME}",
+            "ispb": "{SENDER_ISPB}"
+        },
+        "document": "{SENDER_DOCUMENT}",
+        "name": "{SENDER_NAME}"
+    },
+    "end_to_end": "{ENDTOEND}",
+    "conciliation_id": "{CONCILIATION_ID}",
+    "amount": 300000
+}
