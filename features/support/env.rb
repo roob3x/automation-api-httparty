@@ -25,7 +25,7 @@ module Http
 end
 
 # Configurando o Json Schema.
-schema_directory = "#{Dir.pwd}/features/support/json_schema"
+$schema_directory = "#{Dir.pwd}/features/support/templates/pix_payment_post.json"
 # pego o camino do json e schema e chamo no meu teste o nome do arquivo.
-JsonMatchers.schema_root = schema_directory
+JsonMatchers.schema_root = $schema_directory
 
