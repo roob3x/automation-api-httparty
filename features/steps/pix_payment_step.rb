@@ -21,5 +21,5 @@ Dado('que preencho os dados minimos para realizar pagamento com pix') do
 end
 
 Entao('valido que é feito transacao com sucesso com status code {int}') do |status|
-  expect(@post_payment_pix.code).to eq @data['sender']['name']
+  expect(@post_payment_pix.code).to eq status
 end
