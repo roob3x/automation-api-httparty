@@ -1,7 +1,7 @@
 # language: pt
-@sanity @account_valida
 Funcionalidade: Conta
 
+@sanity @account_valida
 Esquema do Cenario: : Verifico que é possivel pesquisar conta valida
     Dado que realizo uma busca da conta "<accountid>" do cliente
     Entao valido que é retornado o detalhe do cliente com sucesso com status code 200
