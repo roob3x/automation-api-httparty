@@ -1,0 +1,69 @@
+Plano de teste
+
+
+Nome do Projeto:
+Pix
+
+Pessoas envolvidas:
+Roberto Filho, Builders
+
+
+Introdução
+Este documento tem como objetivo resumir todas as informações necessárias para planejar, executar e reportar o esforço de testes referente ao sistema sendo testado. O Sistema do pix tem o objetivo de que o cliente possa realizar uma transferencia bancaria com pix atraves do QRCODE
+
+Escopo
+Os testes devem cobrir as funcionalidades de conseguir realizar o pix com qrcode. todos os testes com prioridade alta nao deve haver bugs. nesse cenario, sera necessario a correcao para que o mesmo possa ser homologado.
+Cenários de teste
+Todos os casos de testes estarao descritos na planilha. e serao inseridos no zephyr scale
+Estratégia
+Os testes de sistema é uma fase do processo de teste de software e de hardware em que o sistema já completamente integrado é verificado quanto a seus requisitos num ambiente de produção. Os testes serão executados de acordo com a necessidade. Além disso, testes automatizados serão executados.
+Para cada entrega que o desenvolvedor esteja liberando, precisamos garantir o minimo dos passos descritos a seguir foram feitos afim de minimizar possiveis erros:
+
+
+
+
+DoR
+Descrição tecnica (Solução, riscos, pontos de atenção e tratamentos de erros)
+Criterios de aceite e tecnicosCenarios de teste escritos/definidos
+Caso seja um bug, colocar evidencias do bug e cenário realizado para replicar o problema
+Ao iniciar uma nova iniciativa/ contexto, o plano de arquitetura precisa estar bem definido pela equipe.
+É preciso que nao haja definições em aberto na demanda e/ou no contrato Ex: Apis, Banco de dados, Kafka, Rabbit e etc.
+Banco de dados criado e/ou coluna conforme necessário;(Se houver)
+Em caso de interacao com parceiros/squads, necessário existir ambiente de desenvolvimento acessível e documentado. primeiramente utilizaremos spike;(Se houver)
+Mapeamento das dependências de outros times e conscientização deles. (Eles tem que saber que precisamos deles e o grau de prioridade disso).
+Alinhar com o time a % minima de testes unitarios. desejavel que seja acima de 85%. tambem alinhar para que seja implementado testes de mutacao.
+
+
+Testes não funcionais:
+Segurança: É de muita importancia testes de seguranca ja que esta envolvido dados sensiveis do cliente e operacao financeira e verificar a vulnerabilidade do sistema.
+Performance: Testes de perfomance serao necessarios para garantir que a aplicacao é escalavel. uma vez que demanda um alto nivel de trafego.
+
+
+Testes funcionais:
+Sera aplicado a tecnica de shift-left. ou seja, precisamos garantir que cada tarefa que esteja sendo liberada pelo desenvolvedor, esta sendo testada devidamente. para evitar maiores surpresas ao final. ampliando a comunicacao com time e afim de diminuir custo elecando os possiveis problemas ja desde o inicio.
+
+Obs: Alinhar com o time para fornecer as massas adequadas para que nao seja um empecilho na execucao dos testes
+
+
+
+Automacao de testes
+Ferramentas
+Conforme o brainstorm realizado com os envolvidos, o projeto sera realizado com:
+- Linguagem: Ruby
+- Versao > 2.6.0 e < 3.1.0
+- Httparty
+- Appium
+- Java 8
+- JMter para testes de perfomance
+- Capybara
+- IDE: VScode
+- Versionamento do codigo: Github
+- CI/CD com github actions
+- Para mobile testes em device farms como browserstack, e devices fisicos
+
+Cronograma
+2 semanas para criação do plano;
+1 semana para design;
+1 semana para execução;
+
+
